@@ -1,1 +1,1 @@
-# Dozenal-Clock---GNOME-Shell-Extension
+# Dozenal-Clock: GNOME-Shell-Extension
