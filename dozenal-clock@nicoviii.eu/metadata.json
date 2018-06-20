@@ -1,0 +1,7 @@
+{
+  "uuid": "dozenal-clock@nicoviii.eu",
+  "name": "Dozenal Clock",
+  "description": "TODO",
+  "url": "https://github.com/NicoVIII/Dozenal-Clock-GNOME-Shell-Extension",
+  "shell-version": [ "3.2.2" ]
+}
