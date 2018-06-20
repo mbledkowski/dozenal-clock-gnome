@@ -1,0 +1,8 @@
+{
+    "name": "Dozenal Clock",
+    "description": "Converts the clock to a dozenal one",
+    "uuid": "dozenalclock@nicoviii.eu",
+    "shell-version": [
+        "3.28.1"
+    ]
+}
