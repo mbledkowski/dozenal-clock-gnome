@@ -4,6 +4,7 @@
  * License: https://github.com/stuartlangridge/gnome-shell-clock-override/blob/master/LICENSE
  */
 
+/* global imports */
 const Main = imports.ui.main;
 const GLib = imports.gi.GLib;
 
