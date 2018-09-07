@@ -4,7 +4,9 @@
  * License: https://github.com/stuartlangridge/gnome-shell-clock-override/blob/master/LICENSE
  */
 
+/* eslint complexity: ["error", 20] */
 /* global imports */
+
 const Main = imports.ui.main;
 const GLib = imports.gi.GLib;
 
@@ -23,9 +25,9 @@ function toDozenalNumber(number) {
 
     if (number >= 0 && number < 10) {
         return number;
-    } else if (number == 10) {
+    } else if (number === 10) {
         return ten;
-    } else if (number == 11) {
+    } else if (number === 11) {
         return eleven;
     }
 }
@@ -55,7 +57,7 @@ function clockOverride(label) {
     let time = convertDecimalToDozenalTime(now.get_hour(), now.get_minute(), now.get_second());
     desired = text.replace(/\s\d\d?‎[^\s\w]+\d\d([^\s\w]+\d\d)?/, " " + time);
 
-    if (text != desired) {
+    if (text !== desired) {
         last = text;
         label.set_text(desired);
     }
