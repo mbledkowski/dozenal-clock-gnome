@@ -3,14 +3,12 @@
  *
  * License: https://github.com/stuartlangridge/gnome-shell-clock-override/blob/master/LICENSE
  */
-
-/* eslint complexity: ["error", 20] */
-/* global imports */
+declare var imports: any;
 
 const Main = imports.ui.main;
 const GLib = imports.gi.GLib;
 
-let last, label, signalHandlerID;
+let last: string, label: any, signalHandlerID: any;
 
 function getStatusArea() {
     let statusArea = Main.panel._statusArea;
@@ -19,7 +17,7 @@ function getStatusArea() {
     return statusArea;
 }
 
-function toDozenalNumber(number) {
+function toDozenalNumber(number: number) {
     let ten = "ᘔ";
     let eleven = "Ɛ";
 
@@ -32,7 +30,7 @@ function toDozenalNumber(number) {
     }
 }
 
-function convertDecimalToDozenalTime(hour, minute, second) {
+function convertDecimalToDozenalTime(hour: number, minute: number, second: number) {
     let daySeconds = 86400;
     let sum = hour*60*60 + minute*60 + second;
     let partOfDay = sum / daySeconds;
@@ -48,9 +46,9 @@ function convertDecimalToDozenalTime(hour, minute, second) {
     return time;
 }
 
-function clockOverride(label) {
+function clockOverride(label: any) {
     let desired = "";
-    let text = label.get_text();
+    let text: string = label.get_text();
 
     // Convert to dozenal
     var now = GLib.DateTime.new_now_local();

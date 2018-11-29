@@ -1,0 +1,24 @@
+{
+  "name": "dozenal-clock-gnome-shell-extension",
+  "version": "0.1.0",
+  "description": "[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active) [![GitHub Release](https://img.shields.io/github/release/NicoVIII/Dozenal-Clock-GNOME-Shell-Extension.svg)]() [![Github Pre-Release](https://img.shields.io/github/release/NicoVIII/Dozenal-Clock-GNOME-Shell-Extension/all.svg?label=prerelease)]() [![Github Downloads](https://img.shields.io/github/downloads/NicoVIII/Dozenal-Clock-GNOME-Shell-Extension/total.svg)]() [![CodeFactor](https://www.codefactor.io/repository/github/nicoviii/dozenal-clock-gnome-shell-extension/badge/master)](https://www.codefactor.io/repository/github/nicoviii/dozenal-clock-gnome-shell-extension/overview/master) [![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/NicoVIII/Dozenal-Clock-GNOME-Shell-Extension/master/LICENSE)",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/NicoVIII/Dozenal-Clock-GNOME-Shell-Extension.git"
+  },
+  "author": "Nico Linder",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/NicoVIII/Dozenal-Clock-GNOME-Shell-Extension/issues"
+  },
+  "homepage": "https://gitlab.com/NicoVIII/Dozenal-Clock-GNOME-Shell-Extension#readme",
+  "devDependencies": {
+    "nps": "^5.9.3",
+    "nps-utils": "^1.7.0",
+    "typescript": "^3.1.6",
+    "uglify-js": "^3.4.9"
+  },
+  "scripts": {
+    "build": "nps"
+  }
+}

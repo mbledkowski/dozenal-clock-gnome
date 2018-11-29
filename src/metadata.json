@@ -1,8 +1,8 @@
 {
     "name": "Dozenal Clock",
     "description": "Converts the clock to a dozenal one",
-    "uuid": "dozenalclock@nicoviii.eu",
-    "url": "https://github.com/NicoVIII/Dozenal-Clock-GNOME-Shell-Extension",
+    "uuid": "dozenalclock@nicoviii.net",
+    "url": "https://gitlab.com/NicoVIII/Dozenal-Clock-GNOME-Shell-Extension",
     "shell-version": [
         "3.28.1"
     ]
