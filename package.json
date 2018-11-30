@@ -16,9 +16,10 @@
     "nps": "^5.9.3",
     "nps-utils": "^1.7.0",
     "typescript": "^3.1.6",
-    "uglify-js": "^3.4.9"
+    "uglify-es": "^3.3.9"
   },
   "scripts": {
     "build": "nps"
-  }
+  },
+  "dependencies": {}
 }

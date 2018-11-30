@@ -6,13 +6,13 @@ module.exports = {
       script: 'nps compile && nps uglify && nps copy',
     },
     compile: {
-      script: 'tsc -p src/ts --noImplicitAny --outFile out/extension.js --lib dom,es5,scripthost,es2015.iterable --module system --sourceMap true',
+      script: 'tsc -p src/ts --outFile out/extension.js',
     },
     copy: {
       script: copy('src/metadata.json out/'),
     },
     uglify: {
-      script: "uglifyjs -m -o out/extension.js --comments --source-map 'content=\"out/extension.js.map\"' out/extension.js",
+      script: "uglifyjs -m -o out/extension.js --comments -- out/extension.js",
     }
   }
 };

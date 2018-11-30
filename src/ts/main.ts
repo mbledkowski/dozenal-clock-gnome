@@ -1,8 +1,13 @@
-/*
- * I was inspired by code from https://github.com/stuartlangridge/gnome-shell-clock-override
+/*!
+ * Dozenal Clock GNOME-Shell Extension v0.1.0
+ * https://gitlab.com/NicoVIII/Dozenal-Clock-GNOME-Shell-Extension
  *
+ * @license MIT
+ *
+ * I was inspired by code from https://github.com/stuartlangridge/gnome-shell-clock-override
  * License: https://github.com/stuartlangridge/gnome-shell-clock-override/blob/master/LICENSE
  */
+
 declare var imports: any;
 
 const Main = imports.ui.main;
