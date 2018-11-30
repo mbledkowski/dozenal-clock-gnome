@@ -11,8 +11,19 @@ This Gnome Shell Extension converts the normal clock to a duodecimal/dozenal one
 
 ![Example time on dozenal clock](https://github.com/NicoVIII/Dozenal-Clock-GNOME-Shell-Extension/raw/master/dozenal.png)
 
+## Installation
+
+The easiest way to install the dozenal clock and stay up-to-date is using [Gnome Extensions](https://extensions.gnome.org).
+You can find this extension [here](https://extensions.gnome.org/extension/1448/dozenal-clock/).
+
+You can also install it manually. Navigate to `~/.local/share/gnome-shell/extensions` (per-user) or to `/usr/share/gnome-shell/extensions` or `/usr/local/share/gnome-shell/extensions` (systemwide) and extract the archive into it. [Source](https://wiki.gnome.org/Projects/GnomeShell/Extensions)
+
 It is recommended to enable seconds for the clock in GNOME Tweak Tool to improve the accuracy of the dozenal clock.
 
 ## Development
 [![GitHub issues](https://img.shields.io/github/issues/NicoVIII/Dozenal-Clock-GNOME-Shell-Extension.svg)](https://github.com/NicoVIII/Dozenal-Clock-GNOME-Shell-Extension/issues)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/ca429847223b4914ac9955439959013e?branch=develop)](https://www.codacy.com/app/NicoVIII/Dozenal-Clock-GNOME-Shell-Extension?branchId=8711147&utm_source=github.com&amp;utm_medium=referral&amp;utm_content=NicoVIII/Dozenal-Clock-GNOME-Shell-Extension&amp;utm_campaign=Badge_Grade)
+
+To build this project you have to have npm installed.  
+Run `npm install` inside the project directory and `npm run build` to build it. The results are placed inside the `out` folder.  
+If you are building this on a Unix device, you can use `npm run publish` to pack the results into some compressed tarballs.

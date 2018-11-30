@@ -19,7 +19,8 @@
     "uglify-es": "^3.3.9"
   },
   "scripts": {
-    "build": "nps"
+    "build": "nps build",
+    "publish": "nps publish"
   },
   "dependencies": {}
 }
