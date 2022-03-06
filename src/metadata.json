@@ -4,6 +4,8 @@
     "uuid": "dozenalclock@nicoviii.eu",
     "url": "https://github.com/NicoVIII/Dozenal-Clock-GNOME-Shell-Extension",
     "shell-version": [
+        "41.0",
+        "40.0",
         "3.28.1"
     ]
 }
