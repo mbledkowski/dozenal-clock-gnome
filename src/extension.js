@@ -30,7 +30,7 @@ function toDozenalNumber(number) {
     }
 }
 
-function convertDecimalToDozenalTime(hour, minute, second) {
+function convertDecimalToDozenalTime(hour, minute, second, sec) {
     let daySeconds = 86400;
     let sum = hour*60*60 + minute*60 + second;
     let partOfDay = sum / daySeconds;
@@ -43,16 +43,24 @@ function convertDecimalToDozenalTime(hour, minute, second) {
         partOfDay -= times / d;
     }
 
+    if (sec) {
+        time += "." + toDozenalNumber(Math.floor(partOfDay*60))
+    }
+
     return time;
 }
 
-function clockOverride(label) {
+function clockOverride(label, sec) {
     let desired = "";
     let text = label.get_text();
 
     // Convert to dozenal
     var now = GLib.DateTime.new_now_local();
-    let time = convertDecimalToDozenalTime(now.get_hour(), now.get_minute(), now.get_second());
+    if (sec) {
+        var time = convertDecimalToDozenalTime(now.get_hour(), now.get_minute(), now.get_second(), true)
+    } else {
+        var time = convertDecimalToDozenalTime(now.get_hour(), now.get_minute(), now.get_second(), false);
+    }
     desired = text.replace(/\s\d\d?‎[^\s\w]+\d\d([^\s\w]+\d\d)?/, " " + time);
 
     if (text != desired) {
@@ -72,7 +80,7 @@ function enable() {
     }
     last = label.get_text();
     signalHandlerID = label.connect("notify::text", clockOverride);
-    clockOverride(label);
+    clockOverride(label, true);
 }
 
 function disable() {
