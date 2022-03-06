@@ -44,7 +44,7 @@ function convertDecimalToDozenalTime(hour, minute, second, sec) {
     }
 
     if (sec) {
-        time += "." + toDozenalNumber(Math.floor(second))
+        time += "." + toDozenalNumber(Math.floor(second/12)) + toDozenalNumber(second%12)
     }
 
     return time;
