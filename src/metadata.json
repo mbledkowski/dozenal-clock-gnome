@@ -2,7 +2,7 @@
     "name": "Dozenal Clock",
     "description": "Converts the clock to a dozenal one",
     "uuid": "dozenalclock@mble.dk",
-    "url": "https://github.com/NicoVIII/Dozenal-Clock-GNOME-Shell-Extension",
+    "url": "https://gitlab.com/mbled/dozenal-clock-gnome",
     "shell-version": [
         "41.0",
         "40.0",
