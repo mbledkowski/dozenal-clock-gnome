@@ -8,6 +8,8 @@
 const Main = imports.ui.main;
 const GLib = imports.gi.GLib;
 
+let sec = true
+
 let last, label, signalHandlerID;
 
 function getStatusArea() {
@@ -80,7 +82,7 @@ function enable() {
     }
     last = label.get_text();
     signalHandlerID = label.connect("notify::text", clockOverride);
-    clockOverride(label, true);
+    clockOverride(label, sec);
 }
 
 function disable() {
